@@ -1,0 +1,17 @@
+name: rba_copilot
+version: "1.0.0"
+config-version: 2
+profile: rba_copilot
+model-paths: ["models"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  rba_copilot:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

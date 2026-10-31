@@ -1,0 +1,34 @@
+domain: macro_indicators
+owner: LuciferDataEngineer
+description: Cash rate, quarterly inflation and the unemployment rate from RBA tables whose source is the RBA or the ABS.
+dataset: data/warehouse/tidy/series_long.parquet
+schema:
+  - name: series_id
+    type: VARCHAR
+  - name: obs_date
+    type: DATE
+  - name: value
+    type: DOUBLE
+  - name: source
+    type: VARCHAR
+quality:
+  - rule: min_rows
+    value: 1000
+    series_id: FIRMMCRTD
+  - rule: not_null
+    column: value
+    series_id: FIRMMCRTD
+  - rule: accepted_range
+    column: value
+    min: 0
+    max: 20
+    series_id: FIRMMCRTD
+  - rule: accepted_range
+    column: value
+    min: 0
+    max: 25
+    series_id: GLFSURSA
+freshness:
+  column: obs_date
+  series_id: FIRMMCRTD
+  max_age_days: 14

@@ -1,0 +1,7 @@
+rba_copilot:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "../data/warehouse/rba.duckdb"
+      threads: 4

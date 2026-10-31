@@ -1,0 +1,19 @@
+DATAFLOW,MEASURE: Measure,INDEX: Index,TSEST: Adjustment Type,REGION: Region,FREQ: Frequency,TIME_PERIOD: Time Period,OBS_VALUE,UNIT_MEASURE: Unit of Measure,OBS_STATUS: Observation Status,DECIMALS: Decimals,OBS_COMMENT: Observation Comment,BASE_PERIOD: Reference Base Period
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2026-08,3.5,PCT: Percent,r: revised,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2026-07,3.6,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2026-06,3.6,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2026-05,3.5,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2026-04,3.3,PCT: Percent,r: revised,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2026-03,3.3,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2026-02,3.3,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2026-01,3.3,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2025-12,3.3,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2025-11,3.2,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2025-10,3.3,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2025-09,3.2,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2025-08,3.1,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2025-07,3,PCT: Percent,r: revised,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2025-06,2.8,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2025-05,3,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2025-04,3.2,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,999902: Trimmed Mean,20: Seasonally Adjusted,50: Australia,M: Monthly,2026-09,3.6,PCT: Percent,,,,25: Sep 2025 = 100.0

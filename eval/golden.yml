@@ -1,0 +1,98 @@
+# Hand-written questions. relevant_docs are the RBA pages that state the fact.
+questions:
+  - id: q01
+    question: Why did the Board increase the cash rate target to 4.60 per cent in September 2026?
+    relevant_docs: [mr-26-27]
+  - id: q02
+    question: Was the September 2026 monetary policy decision unanimous?
+    relevant_docs: [mr-26-27]
+  - id: q03
+    question: What did the September 2026 decision say about AI-related demand and technology prices?
+    relevant_docs: [mr-26-27]
+  - id: q04
+    question: What did the September 2026 minutes say market economists expected for the cash rate?
+    relevant_docs: [minutes-2026-09-29]
+  - id: q05
+    question: When did the August 2026 overview say inflation would reach the midpoint of the target range?
+    relevant_docs: [smp-2026-aug-overview]
+  - id: q06
+    question: Have banks passed on the three cash rate increases from earlier in 2026?
+    relevant_docs: [smp-2026-aug-financial-conditions]
+  - id: q07
+    question: Did the Board leave the cash rate unchanged at 4.35 per cent in August 2026?
+    relevant_docs: [mr-26-19]
+  - id: q08
+    question: Why did the Board increase the cash rate target to 3.85 per cent in February 2026?
+    relevant_docs: [mr-26-03]
+  - id: q09
+    question: Why did the Board increase the cash rate target to 4.10 per cent in March 2026?
+    relevant_docs: [mr-26-08]
+  - id: q10
+    question: Why did the Board increase the cash rate target to 4.35 per cent in May 2026?
+    relevant_docs: [mr-26-12]
+  - id: q11
+    question: Why did the Board leave the cash rate unchanged in June 2026?
+    relevant_docs: [mr-26-15]
+  - id: q12
+    question: How does the Reserve Bank assess full employment in the February 2026 Statement?
+    relevant_docs: [smp-2026-feb-box-a-update-on-the-rbas-approach-to-assessing-full-employment]
+  - id: q13
+    question: Did the August 2026 overview judge the labour market to be a little tight?
+    relevant_docs: [smp-2026-aug-overview]
+  - id: q14
+    question: What did the September 2026 decision say about weak productivity growth?
+    relevant_docs: [mr-26-27]
+  - id: q15
+    question: What did the September 2026 decision say about global energy prices and the Middle East?
+    relevant_docs: [mr-26-27]
+  - id: q16
+    question: What did members say in the September 2026 minutes about higher oil prices?
+    relevant_docs: [minutes-2026-09-29]
+  - id: q17
+    question: Did the May 2026 economic conditions chapter mention spending on data centres?
+    relevant_docs: [smp-2026-may-economic-conditions]
+  - id: q18
+    question: Until when does the August 2026 outlook expect trimmed mean inflation to stay above 3 per cent?
+    relevant_docs: [smp-2026-aug-outlook]
+  - id: q19
+    question: What unemployment rate did the May 2026 overview report for March?
+    relevant_docs: [smp-2026-may-overview]
+  - id: q20
+    question: What did the August 2026 economic conditions chapter say about the NAIRU and full employment?
+    relevant_docs: [smp-2026-aug-economic-conditions]
+  - id: q21
+    question: What messages did liaison teams collect for the August 2026 Statement?
+    relevant_docs: [smp-2026-aug-box-a-insights-from-liaison]
+  - id: q22
+    question: Did the September 2026 decision say the three earlier increases had tightened financial conditions?
+    relevant_docs: [mr-26-27]
+  - id: q23
+    question: What did the September 2026 decision say about housing prices and new housing loans?
+    relevant_docs: [mr-26-27]
+  - id: q24
+    question: Why did inflation pick up before the February 2026 rate increase to 3.85 per cent?
+    relevant_docs: [mr-26-03]
+  - id: q25
+    question: What did the March 2026 minutes record about the decision to raise the cash rate to 4.10 per cent?
+    relevant_docs: [minutes-2026-03-17]
+  - id: q26
+    question: What cash rate did the Board lower the target to in August 2025?
+    relevant_docs: [mr-25-22, minutes-2025-08-12]
+  - id: q27
+    question: Did the Board leave the cash rate unchanged at 3.60 per cent in December 2025?
+    relevant_docs: [mr-25-33]
+  - id: q28
+    question: Did the Board leave the cash rate unchanged at 3.60 per cent in November 2025?
+    relevant_docs: [mr-25-31]
+  - id: q29
+    question: Why did the Board lower the cash rate to 3.85 per cent in May 2025?
+    relevant_docs: [mr-25-13]
+  - id: q30
+    question: Are financial conditions judged to be somewhat restrictive in the August 2026 Statement?
+    relevant_docs: [smp-2026-aug-financial-conditions]
+  - id: q31
+    question: What did the February 2026 decision say about inflation in the second half of 2025?
+    relevant_docs: [mr-26-03, minutes-2026-02-03]
+  - id: q32
+    question: What did the June 2026 decision say about leaving the cash rate at 4.35 per cent?
+    relevant_docs: [mr-26-15]
