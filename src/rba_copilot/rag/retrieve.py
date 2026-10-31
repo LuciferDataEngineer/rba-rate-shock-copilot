@@ -6,9 +6,6 @@ import os
 import re
 from collections import defaultdict
 
-import psycopg
-from pgvector.psycopg import register_vector
-
 STOP = {
     "the",
     "and",
@@ -80,7 +77,10 @@ def database_url() -> str:
     return os.environ.get("DATABASE_URL", "postgresql://rba:rba@localhost:5432/rba")
 
 
-def connect() -> psycopg.Connection:
+def connect():
+    import psycopg
+    from pgvector.psycopg import register_vector
+
     connection = psycopg.connect(database_url())
     connection.execute("CREATE EXTENSION IF NOT EXISTS vector")
     connection.commit()
@@ -152,7 +152,7 @@ def _rows_to_dicts(cursor) -> list[dict]:
     return [dict(zip(columns, row, strict=True)) for row in cursor.fetchall()]
 
 
-def search_bm25(connection: psycopg.Connection, question: str, limit: int = 20) -> list[dict]:
+def search_bm25(connection, question: str, limit: int = 20) -> list[dict]:
     terms = query_terms(question)
     if not terms:
         return []
@@ -182,7 +182,7 @@ def _token_weight(token: str) -> int:
     return 2
 
 
-def search_overlap(connection: psycopg.Connection, question: str, limit: int = 30) -> list[dict]:
+def search_overlap(connection, question: str, limit: int = 30) -> list[dict]:
     tokens = distinctive_tokens(question)
     if not tokens:
         return []
@@ -223,7 +223,7 @@ def search_overlap(connection: psycopg.Connection, question: str, limit: int = 3
         return _rows_to_dicts(cursor)
 
 
-def search_vector(connection: psycopg.Connection, vector: list[float], limit: int = 20) -> list[dict]:
+def search_vector(connection, vector: list[float], limit: int = 20) -> list[dict]:
     with connection.cursor() as cursor:
         cursor.execute(
             """
