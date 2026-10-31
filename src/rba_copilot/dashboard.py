@@ -263,7 +263,7 @@ def render(headline: dict) -> str:
     h1 {{ font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; margin: 0 0 12px; font-weight: 650; }}
     .lede {{ font-size: 1.15rem; max-width: 42rem; margin: 0; color: #f3efe6; }}
     .asof {{ font-family: "Avenir Next", "Segoe UI", sans-serif; color: var(--muted); font-size: 0.92rem; margin: 18px 0 0; }}
-    .kpis {{ display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: -28px; }}
+    .kpis {{ display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 16px; }}
     .card {{ background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--navy); border-radius: 12px; padding: 14px 14px 16px; box-shadow: 0 8px 24px rgba(22, 50, 79, 0.06); }}
     .card.pressure {{ border-top-color: var(--pressure); }}
     .card.watch {{ border-top-color: var(--watch); }}
