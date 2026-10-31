@@ -1,0 +1,62 @@
+version: 2
+
+models:
+  - name: metricflow_time_spine
+    description: Daily spine required by MetricFlow.
+    time_spine:
+      standard_granularity_column: date_day
+    columns:
+      - name: date_day
+        granularity: day
+        tests:
+          - unique
+          - not_null
+
+  - name: mart_household_month
+    description: One row per month for the cash rate, inflation, unemployment, and a comparison mortgage.
+    columns:
+      - name: month_start
+        tests:
+          - unique
+          - not_null
+      - name: cash_rate_target
+        tests:
+          - accepted_range:
+              min_value: 0
+              max_value: 20
+      - name: unemployment_rate
+        tests:
+          - accepted_range:
+              min_value: 2
+              max_value: 15
+      - name: repayment_600k
+        tests:
+          - accepted_range:
+              min_value: 1000
+              max_value: 8000
+
+  - name: mart_decisions
+    description: Days the cash-rate target changed.
+    columns:
+      - name: effective_date
+        tests:
+          - unique
+          - not_null
+      - name: change_bp
+        tests:
+          - not_null
+
+  - name: mart_theme_monthly
+    columns:
+      - name: share
+        tests:
+          - accepted_range:
+              min_value: 0
+              max_value: 1
+
+  - name: mart_documents
+    columns:
+      - name: doc_id
+        tests:
+          - unique
+          - not_null

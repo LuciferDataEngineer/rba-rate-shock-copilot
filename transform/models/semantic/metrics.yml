@@ -1,0 +1,115 @@
+version: 2
+
+semantic_models:
+  - name: household_month
+    description: Monthly cash rate, inflation, unemployment, and comparison-mortgage repayments.
+    model: ref('mart_household_month')
+    defaults:
+      agg_time_dimension: month_start
+    entities:
+      - name: household_month
+        type: primary
+        expr: month_start
+    measures:
+      - name: cash_rate_target
+        description: Cash rate target at month end, per cent.
+        agg: average
+        expr: cash_rate_target
+      - name: trimmed_mean_inflation
+        description: Year-ended trimmed mean inflation, per cent.
+        agg: average
+        expr: trimmed_mean_yoy
+      - name: headline_inflation
+        description: Year-ended headline inflation, monthly CPI where published.
+        agg: average
+        expr: headline_inflation_yoy
+      - name: unemployment_rate
+        description: Seasonally adjusted unemployment rate, per cent.
+        agg: average
+        expr: unemployment_rate
+      - name: repayment_per_100k_value
+        description: Monthly repayment on a $100,000 30-year loan.
+        agg: average
+        expr: repayment_per_100k
+      - name: cumulative_hike_bp_value
+        description: Cash-rate change in basis points since January 2026.
+        agg: average
+        expr: cumulative_hike_bp
+      - name: mortgage_repayment_to_income_value
+        description: Repayment on a $600,000 loan divided by one full-time ordinary-time wage.
+        agg: average
+        expr: mortgage_repayment_to_income
+    dimensions:
+      - name: month_start
+        type: time
+        type_params:
+          time_granularity: month
+
+metrics:
+  - name: cash_rate
+    description: Cash rate target.
+    type: simple
+    label: Cash rate
+    type_params:
+      measure: cash_rate_target
+  - name: trimmed_mean_inflation_metric
+    description: Year-ended trimmed mean inflation.
+    type: simple
+    label: Trimmed mean inflation
+    type_params:
+      measure: trimmed_mean_inflation
+  - name: real_cash_rate
+    description: Cash rate target minus year-ended trimmed mean inflation.
+    type: derived
+    label: Real cash rate
+    type_params:
+      expr: cash_rate - trimmed_mean_inflation_metric
+      metrics:
+        - name: cash_rate
+        - name: trimmed_mean_inflation_metric
+  - name: inflation_gap
+    description: Year-ended trimmed mean minus the 2.5 per cent midpoint of the target band.
+    type: derived
+    label: Inflation gap
+    type_params:
+      expr: trimmed_mean_inflation_metric - 2.5
+      metrics:
+        - name: trimmed_mean_inflation_metric
+  - name: repayment_per_100k
+    description: Monthly principal-and-interest repayment per $100,000 over 30 years.
+    type: simple
+    label: Repayment per 100k
+    type_params:
+      measure: repayment_per_100k_value
+  - name: cumulative_hike_bp
+    description: Basis-point change in the cash rate target since January 2026.
+    type: simple
+    label: Cumulative hike
+    type_params:
+      measure: cumulative_hike_bp_value
+  - name: mortgage_repayment_to_income
+    description: Share of one full-time ordinary-time wage taken by the repayment on a $600,000 loan.
+    type: simple
+    label: Mortgage repayment to income
+    type_params:
+      measure: mortgage_repayment_to_income_value
+
+saved_queries:
+  - name: household_metrics_by_month
+    description: Monthly semantic-layer metrics for the dashboard series.
+    query_params:
+      metrics:
+        - cash_rate
+        - trimmed_mean_inflation_metric
+        - real_cash_rate
+        - inflation_gap
+        - repayment_per_100k
+        - cumulative_hike_bp
+        - mortgage_repayment_to_income
+      group_by:
+        - "TimeDimension('metric_time', 'month')"
+    exports:
+      - name: household_metrics_by_month
+        config:
+          export_as: table
+          schema: semantic_exports

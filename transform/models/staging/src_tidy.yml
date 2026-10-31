@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: tidy
+    description: Parquet written from the committed snapshot. No live scrape.
+    meta:
+      external_location: "read_parquet('../data/warehouse/tidy/{name}.parquet')"
+    tables:
+      - name: series_long
+      - name: series_catalogue
+      - name: abs_cpi_monthly
+      - name: abs_awe
+      - name: documents
+      - name: chunks
+      - name: theme_monthly
