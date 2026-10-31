@@ -1,0 +1,19 @@
+DATAFLOW,MEASURE: Measure,INDEX: Index,TSEST: Adjustment Type,REGION: Region,FREQ: Frequency,TIME_PERIOD: Time Period,OBS_VALUE,UNIT_MEASURE: Unit of Measure,OBS_STATUS: Observation Status,DECIMALS: Decimals,OBS_COMMENT: Observation Comment,BASE_PERIOD: Reference Base Period
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2026-08,4,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2026-07,3.5,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2026-06,3.8,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2026-05,4,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2026-04,4.2,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2026-03,4.6,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2026-02,3.7,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2026-01,3.8,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2025-12,3.8,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2025-11,3.4,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2025-10,3.8,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2025-09,3.6,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2025-08,3.2,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2025-07,3,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2025-06,1.9,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2025-05,2.1,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2025-04,2.4,PCT: Percent,,,,25: Sep 2025 = 100.0
+ABS:CPI(2.0.0),3: Percentage change from previous year,10001: All groups CPI,10: Original,50: Australia,M: Monthly,2026-09,4.3,PCT: Percent,,,,25: Sep 2025 = 100.0

@@ -1,0 +1,27 @@
+domain: household_finance
+owner: LuciferDataEngineer
+description: Outstanding owner-occupier variable housing rate published by APRA and the RBA.
+dataset: data/warehouse/tidy/series_long.parquet
+schema:
+  - name: series_id
+    type: VARCHAR
+  - name: obs_date
+    type: DATE
+  - name: value
+    type: DOUBLE
+quality:
+  - rule: min_rows
+    value: 12
+    series_id: FLRHOOVA
+  - rule: not_null
+    column: value
+    series_id: FLRHOOVA
+  - rule: accepted_range
+    column: value
+    min: 0
+    max: 20
+    series_id: FLRHOOVA
+freshness:
+  column: obs_date
+  series_id: FLRHOOVA
+  max_age_days: 120

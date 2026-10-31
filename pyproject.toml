@@ -6,12 +6,31 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "LuciferDataEngineer" }]
-dependencies = []
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "duckdb>=1.1",
+  "lxml>=5",
+  "pydantic>=2",
+  "pyyaml>=6",
+]
 
 [project.optional-dependencies]
 dev = [
   "pytest>=8.0",
   "ruff>=0.6",
+]
+dbt = [
+  "dbt-core>=1.9,<1.10",
+  "dbt-duckdb>=1.9,<1.10",
+]
+rag = [
+  "numpy>=1.26",
+  "pgvector>=0.3",
+  "psycopg[binary]>=3.1",
+  "sentence-transformers>=3.0",
+]
+orch = [
+  "dagster>=1.9",
 ]
 
 [build-system]
@@ -22,12 +41,13 @@ build-backend = "setuptools.build_meta"
 where = ["src"]
 
 [tool.ruff]
-line-length = 100
+line-length = 120
 target-version = "py311"
 src = ["src", "tests"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "W"]
+ignore = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

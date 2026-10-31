@@ -1,0 +1,1395 @@
+{
+  "project": "rba-rate-shock-copilot",
+  "access_timestamp_utc": "2026-10-31T22:22:05.644696+00:00",
+  "access_timestamp_melbourne": "2026-11-01T09:22:05.644696+11:00",
+  "attribution": "Source: RBA; Australian Bureau of Statistics",
+  "licence": "CC BY 4.0",
+  "document_count": 63,
+  "notes": [
+    "Raw RBA CSVs include some third-party series (Canstar, ASX, FENICS). Downstream code keeps only series whose Source is RBA, ABS, or APRA.",
+    "ABS monthly CPI and average weekly earnings were read from the ABS Data API because table G1 is the quarterly CPI.",
+    "CI reads this snapshot and does not scrape the live sites."
+  ],
+  "files": [
+    {
+      "path": "data/snapshot/tables/f1-data.csv",
+      "source_url": "https://www.rba.gov.au/statistics/tables/csv/f1-data.csv",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "F1 Interest rates and yields, money market, daily",
+      "sha256": "e4b0b06ccded390fb01a357666e6893c0ac564f5fe12f6aad0eb662a201f5c3f",
+      "bytes": 308712,
+      "rows": 4017
+    },
+    {
+      "path": "data/snapshot/tables/f1.1-data.csv",
+      "source_url": "https://www.rba.gov.au/statistics/tables/csv/f1.1-data.csv",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "F1.1 Interest rates and yields, money market, monthly",
+      "sha256": "d6d68d8ec1b55cf87d1e74bac7582b1efb3c626e8608a582900301714ed725f9",
+      "bytes": 43862,
+      "rows": 9998
+    },
+    {
+      "path": "data/snapshot/tables/f5-data.csv",
+      "source_url": "https://www.rba.gov.au/statistics/tables/csv/f5-data.csv",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "F5 Indicator lending rates",
+      "sha256": "4ff54c8a70172492059a87e067d72a309539afec265bd0b081d5652189ebacc0",
+      "bytes": 73344,
+      "rows": 9993
+    },
+    {
+      "path": "data/snapshot/tables/f6-data.csv",
+      "source_url": "https://www.rba.gov.au/statistics/tables/csv/f6-data.csv",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "F6 Housing lending rates",
+      "sha256": "5b0a7156e47284b76775e2481c7c26acd4eac36486a9344900a51aefb3a2d8b5",
+      "bytes": 37804,
+      "rows": 9998
+    },
+    {
+      "path": "data/snapshot/tables/g1-data.csv",
+      "source_url": "https://www.rba.gov.au/statistics/tables/csv/g1-data.csv",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "G1 Consumer price inflation",
+      "sha256": "777ce0f23e8c2d176a39f033b157df5c24553cc6c63498e1adbb78c59bbf6d96",
+      "bytes": 39998,
+      "rows": 9998
+    },
+    {
+      "path": "data/snapshot/tables/h5-data.csv",
+      "source_url": "https://www.rba.gov.au/statistics/tables/csv/h5-data.csv",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "H5 Labour force",
+      "sha256": "134ecb8d3da466cdd3cccffc5a1e90982821c568aa11dad0ebbf7c1b958cf59f",
+      "bytes": 73182,
+      "rows": 9998
+    },
+    {
+      "path": "data/snapshot/tables/e13-data.csv",
+      "source_url": "https://www.rba.gov.au/statistics/tables/csv/e13-data.csv",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "E13 Housing loan payments",
+      "sha256": "3940e4b0f94004b4527d02be40f3de5925d43374644b2ac1b53d7377d1b3d6e5",
+      "bytes": 6721,
+      "rows": 80
+    },
+    {
+      "path": "data/snapshot/abs/cpi_headline_yoy.csv",
+      "source_url": "https://data.api.abs.gov.au/rest/data/ABS,CPI,2.0.0/3.10001.10.50.M?startPeriod=2024-01&endPeriod=2026-09",
+      "publisher": "Australian Bureau of Statistics",
+      "licence": "CC BY 4.0",
+      "title": "Monthly CPI, all groups, percentage change from previous year, Australia, original",
+      "sha256": "e598e2104b2d257d2e94aa03abd27c190ef6621934f4f52e5f05147db136461c",
+      "bytes": 3241,
+      "rows": 19
+    },
+    {
+      "path": "data/snapshot/abs/cpi_trimmed_mean_yoy.csv",
+      "source_url": "https://data.api.abs.gov.au/rest/data/ABS,CPI,2.0.0/3.999902.20.50.M?startPeriod=2024-01&endPeriod=2026-09",
+      "publisher": "Australian Bureau of Statistics",
+      "licence": "CC BY 4.0",
+      "title": "Monthly CPI trimmed mean, percentage change from previous year, Australia, seasonally adjusted",
+      "sha256": "4e5ce4dbf9bddcb0bb408c1d5e0b246e11b736332f2bae510959c13448d806f5",
+      "bytes": 3453,
+      "rows": 19
+    },
+    {
+      "path": "data/snapshot/abs/cpi_headline_index.csv",
+      "source_url": "https://data.api.abs.gov.au/rest/data/ABS,CPI,2.0.0/1.10001.10.50.M?startPeriod=2024-01&endPeriod=2026-09",
+      "publisher": "Australian Bureau of Statistics",
+      "licence": "CC BY 4.0",
+      "title": "Monthly CPI, all groups index, Australia, original",
+      "sha256": "f5c953198b58994dbb0f3358dd488ac999183c5b444b3e4a251cce488096585f",
+      "bytes": 4752,
+      "rows": 31
+    },
+    {
+      "path": "data/snapshot/abs/awe_ordinary_time.csv",
+      "source_url": "https://data.api.abs.gov.au/rest/data/ABS,AWE,1.0.0/3.1.3.7.TOT.20.AUS.S?startPeriod=2023-S1",
+      "publisher": "Australian Bureau of Statistics",
+      "licence": "CC BY 4.0",
+      "title": "Full-time adult average weekly ordinary time earnings, persons, Australia, seasonally adjusted",
+      "sha256": "e53a9fd7853b90631d0f882ea5d75fccb473119f661f19375ff61922edda4fcb",
+      "bytes": 1995,
+      "rows": 8
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-25-03.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-03.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Reserve Bank Board: Monetary Policy Decision",
+      "sha256": "c0f40e28fdf39f5ca7a218e65eb2c6917f99020137673972babe0223e9ee46d4",
+      "bytes": 30902,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-25-03.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-03.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Reserve Bank Board: Monetary Policy Decision",
+      "sha256": "a0feb56afad671d3ab3a4206340f39bbb96b0afb7da84e71049db2d7551cc94b",
+      "bytes": 4933,
+      "rows": 11
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-25-10.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-10.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "0662780bf76b6aec21adcf5595a1b017f49efe8439716ae969952d54cc5a1385",
+      "bytes": 29740,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-25-10.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-10.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "86ca6cec65d589fb8615f059548e053d651ccf5c41941bfd7daf2b996bfabb49",
+      "bytes": 4294,
+      "rows": 11
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-25-13.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-13.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "5a70366f04c5ac14febb586d4dfb2c3f233176fe36b723f9c450ebef62f5b813",
+      "bytes": 30390,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-25-13.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-13.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "d4232ccc51a634a53d47faaba31857429769de60b6e17ca0f30f3d604e4b73e8",
+      "bytes": 4811,
+      "rows": 11
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-25-17.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-17.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "43c3548a14400c761e5d04d24e7c9d9ab4621b9bc52b6ef40eabc3240172a68e",
+      "bytes": 29929,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-25-17.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-17.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "1e9b419c5ede234eed7ba8b2c2f3edf44c4e55d39253a069032128d15123a4c5",
+      "bytes": 4748,
+      "rows": 14
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-25-22.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-22.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "962c3d77d2d2da74314ea81cc39e298914443a2abfcac5ea3dbb8d8a6166fd0b",
+      "bytes": 30335,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-25-22.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-22.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "5b4ff51badc3a1dc82518f8e28bf23d6d3d2c9b1e8dbad57cf8c67651222c41d",
+      "bytes": 4528,
+      "rows": 14
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-25-27.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-27.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "5f0745e113595f7e0cb65bb7f325a2a9797db37339ef5702aaa45a1679a37b3a",
+      "bytes": 29731,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-25-27.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-27.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "148a7eea6b27562bb1f215c216dce48a92ff16239eb2421e30905bd0769cd643",
+      "bytes": 4476,
+      "rows": 14
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-25-31.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-31.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "86846d005254753e62f8ba850625d62585d839c6ccbfc5fa2f0f008aa192adbc",
+      "bytes": 30683,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-25-31.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-31.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "ddc951ad9cce591bd0d2005a6ec88d0d505426e115c0d1522aab349329a3a81f",
+      "bytes": 4958,
+      "rows": 14
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-25-33.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-33.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "07072a4f28966ed8ee44fc0a69eaf0d1dfb5e08260ffd1d0929338a4ece653ba",
+      "bytes": 28298,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-25-33.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2025/mr-25-33.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "111e746a64b56f4b90ec8f8a67fff69d9ec1af91676d83de33f78706d6729ca7",
+      "bytes": 3140,
+      "rows": 5
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-26-03.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-03.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "c6c2155ede4d3e68bfbc01fd21b59ddedd30cac59b5e8e59c83ac746687bd06d",
+      "bytes": 28779,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-26-03.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-03.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "cd96f4d6522ffeb49c0540311318cfb351b5a1806b056caa3ba08b8e1f50f70e",
+      "bytes": 3249,
+      "rows": 5
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-26-08.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-08.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "d79d013b3bb710af2170e0a5c47260146e2af90aa00c96f34c349792ea10944e",
+      "bytes": 29383,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-26-08.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-08.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "4604215961251c5bf327d9eef78c80774bb49008678d331c815831056f9a7051",
+      "bytes": 4180,
+      "rows": 5
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-26-12.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-12.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "f3aafe88084c2ed82b07582d9fa40d3cd08ea0528abdf87df3c4ecefab4d9c95",
+      "bytes": 29083,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-26-12.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-12.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "dacbfe9c84724d94b23eaec2a89042db40d6b517f9d95fe89584e90e6ed237c6",
+      "bytes": 3356,
+      "rows": 5
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-26-15.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-15.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "5f05fefc5b2fb28b7e1381dfb8786cd57d8eb5794b752dddae9badefbdf8a6d2",
+      "bytes": 28422,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-26-15.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-15.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "65ff459a9c078e837ca34205171e2122581828f1b4a1ace4902070edec7108b3",
+      "bytes": 3697,
+      "rows": 5
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-26-19.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "bd13d930b65d4e4ad9d6202259f4eb873ac88a9c346364242693540e9e36e822",
+      "bytes": 29093,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-26-19.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "2da332533e01304b01903a93ae6634130fe7a7253ef440cb7f31036d46a101a8",
+      "bytes": 3877,
+      "rows": 5
+    },
+    {
+      "path": "data/snapshot/documents/html/mr-26-27.html",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-27.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "963658a27a9babdf5f8480005902f9a35aa26a6eac3784af2f65390bb7e2a4b3",
+      "bytes": 28723,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/mr-26-27.txt",
+      "source_url": "https://www.rba.gov.au/media-releases/2026/mr-26-27.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "sha256": "4d7f7367a06403c22fb04633069ccbfa49d6cbfe382d31b6189f6a06b4932cfc",
+      "bytes": 3605,
+      "rows": 5
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2025-02-18.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-02-18.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "18 February 2025",
+      "sha256": "be91b44b6c222c7e2d76425f0f4e43cebac851be9252bd559b5d2173c514706d",
+      "bytes": 58389,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2025-02-18.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-02-18.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "18 February 2025",
+      "sha256": "f9aad4ce76189206eec3d10094d78f88984680f589de0e8ac2d2df36a3c9d6f9",
+      "bytes": 26511,
+      "rows": 23
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2025-04-01.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-04-01.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "1 April 2025",
+      "sha256": "ac2e865becbbc13a7ffe773e93b9112b0e3e2e3b301e3658f6f59335ab0d7d23",
+      "bytes": 62208,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2025-04-01.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-04-01.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "1 April 2025",
+      "sha256": "26c9214d0d19e9a2b789594aaf3ff217c4f93ec12753cbcb1cfab8b1735de753",
+      "bytes": 30701,
+      "rows": 32
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2025-05-20.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-05-20.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "20 May 2025",
+      "sha256": "3327c02cf0a46b4f660b2e921034a992d7f62d2c113d7ca59258f089c58013c5",
+      "bytes": 58373,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2025-05-20.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-05-20.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "20 May 2025",
+      "sha256": "62793dd1743e9d728c4b9e8f0f0f79a607b0bfddd2055000cb192906d4beb49d",
+      "bytes": 26734,
+      "rows": 23
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2025-07-08.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-07-08.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "8 July 2025",
+      "sha256": "660cca5acdd1012153b7b4103ac342aac0458597c29c1df02537dd11b302c629",
+      "bytes": 55043,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2025-07-08.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-07-08.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "8 July 2025",
+      "sha256": "82c31bfe204403a8f1fbb36211ec544e777fa5cf9a1bbcfbd2fcf5b910c3b5ba",
+      "bytes": 24118,
+      "rows": 23
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2025-08-12.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-08-12.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "12 August 2025",
+      "sha256": "45bbcfddb17167ca2a6288934963cf490e5df0d1e54208828c413555d043313f",
+      "bytes": 55196,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2025-08-12.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-08-12.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "12 August 2025",
+      "sha256": "c11623456ebd8b2240b16e7fc8c1be03697039ea8b2898c65119d4f5cdcd0f58",
+      "bytes": 23814,
+      "rows": 29
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2025-09-30.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-09-30.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "30 September 2025",
+      "sha256": "e9ff76c8c867974a459bbf0284c80fe39b34cfcfbf0dd1da2225a46c3c9be9d7",
+      "bytes": 56867,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2025-09-30.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-09-30.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "30 September 2025",
+      "sha256": "acff0bc2b5ab37466adc4ad3f08bd752d9190078f9b5537f4d951a79c2f2136c",
+      "bytes": 25796,
+      "rows": 23
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2025-11-04.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-11-04.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "4 November 2025",
+      "sha256": "63b42901d815cc5f292bb4eceff438fb1599a148d8f0a395796f8d8838a91f5d",
+      "bytes": 57206,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2025-11-04.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-11-04.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "4 November 2025",
+      "sha256": "a445264a2b7ecd4bfde72b45426878149b49d8874444f04c883df24c297d716b",
+      "bytes": 25721,
+      "rows": 26
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2025-12-09.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-12-09.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "9 December 2025",
+      "sha256": "0945aa48fe6e5e3d0bf3fd4578e645953efd3ffffad7080a8c36d03266a4937d",
+      "bytes": 50591,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2025-12-09.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2025/2025-12-09.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "9 December 2025",
+      "sha256": "b4b93201e53d9981362d1c83297f10ec96e76f8303c4a339dcae837e920a70d0",
+      "bytes": 20144,
+      "rows": 20
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2026-02-03.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-02-03.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "3 February 2026",
+      "sha256": "599ded95da46efe5dc4415f1008a9eccd409211d0a3f89d8f4c5f0039575f8f3",
+      "bytes": 58112,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2026-02-03.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-02-03.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "3 February 2026",
+      "sha256": "2c398759504e70c07484a3439016319d890974ff6fd6bb00844e64593da7af05",
+      "bytes": 26539,
+      "rows": 23
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2026-03-17.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-03-17.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "17 March 2026",
+      "sha256": "f5474968323653e61915050ac37575381c421fbbb4c40e6122fe388bef107808",
+      "bytes": 64781,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2026-03-17.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-03-17.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "17 March 2026",
+      "sha256": "b9f76a587e960b56206337ea3dea6bb5d7f13afe79c05362aed0b9862200115b",
+      "bytes": 33169,
+      "rows": 23
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2026-05-05.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-05-05.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "5 May 2026",
+      "sha256": "97861a42bb01f666f828478a743c4a8df44fa3896b5a76b392ffbded2460ab1b",
+      "bytes": 61644,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2026-05-05.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-05-05.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "5 May 2026",
+      "sha256": "3de741cd3d581a055f280c69b3fd689965f30a593df81b2d2bd9f8b6ec802157",
+      "bytes": 29789,
+      "rows": 26
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2026-06-16.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-06-16.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "16 June 2026",
+      "sha256": "ed1adab776983d852acbc11c3a8d3a169602933f40cbc8c857b6fe3dd8404ce8",
+      "bytes": 50636,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2026-06-16.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-06-16.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "16 June 2026",
+      "sha256": "c47919cccb0d77d3ac097e4f113e9e0069147b417684e365fed9a41f728a84c2",
+      "bytes": 20522,
+      "rows": 23
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2026-08-11.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-08-11.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "11 August 2026",
+      "sha256": "d63f1e3a7235c36232fb9b78687fcf618ba378e4f38a2069fbe7297b4dbe0587",
+      "bytes": 58917,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2026-08-11.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-08-11.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "11 August 2026",
+      "sha256": "a3dc83fd362fb006247eeea774fd2f590959ebd83c0bdbfde43a5db322993691",
+      "bytes": 27403,
+      "rows": 26
+    },
+    {
+      "path": "data/snapshot/documents/html/minutes-2026-09-29.html",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-09-29.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "29 September 2026",
+      "sha256": "c4748239a92aeee678057615f77557338cc960a166085725111cc4d05c622b1a",
+      "bytes": 63725,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/minutes-2026-09-29.txt",
+      "source_url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-09-29.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "29 September 2026",
+      "sha256": "6070ade7f5d628fed7f070b3a06b9f2a250003c2be2821bf2927bba6cc28250c",
+      "bytes": 31715,
+      "rows": 29
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-feb-overview.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/feb/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "5136e8590ad96f3d37da08fabafc451fa200f01330e28a969d903533431dad82",
+      "bytes": 54380,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-feb-overview.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/feb/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "b4a55a4f75ecf3b87a3088938ed35f3a58386db6430c7c70a173cc39c611b524",
+      "bytes": 13818,
+      "rows": 34
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-feb-economic-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/feb/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "d37d172f881fb02919bf516446eb64f1d10241ffd5357bffe17099ca23d0b603",
+      "bytes": 105463,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-feb-economic-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/feb/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "589eb65f0c117d286e816807f837ce5c64b7b5cd18f39437fd94619791ad86e5",
+      "bytes": 41229,
+      "rows": 81
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-feb-financial-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/feb/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "a35c8ac526488816795a7468dc2f3109767421c046247de0f809210b2d75fd89",
+      "bytes": 76687,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-feb-financial-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/feb/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "4870c4cdde66a5babca1d33bd75ac2d7e2794f7b42a3ba1b13fa47f89feddc3e",
+      "bytes": 22662,
+      "rows": 46
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-feb-outlook.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/feb/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "6d21a095f73cc98e59dde6bb805161268028b531e2f0f29bb729eae8b49437b7",
+      "bytes": 94329,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-feb-outlook.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/feb/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "10c9b555ffa601d1a3f7ec6af1ae08f87ec648fc789c2c4d85ef0aefaf72f2b4",
+      "bytes": 36372,
+      "rows": 53
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-feb-box-a-implications-of-us-policy-settings-for-financial-markets.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/feb/box-a-implications-of-us-policy-settings-for-financial-markets.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: Implications of US Policy Settings for Financial Markets",
+      "sha256": "c20caf945a3c8a611d374d97fd89bf9c1cd3194004cdf9e3c8a05c2d80ae12bf",
+      "bytes": 42212,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-feb-box-a-implications-of-us-policy-settings-for-financial-markets.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/feb/box-a-implications-of-us-policy-settings-for-financial-markets.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: Implications of US Policy Settings for Financial Markets",
+      "sha256": "9ae52adc4e62cad206b765879b48aa5eaf25631c7e644e0fbcd85d8583385dc1",
+      "bytes": 6437,
+      "rows": 11
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-may-overview.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/may/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "19dde3fc22859c63be3a316a58acc40da222d3d046ee4007ff2161a34f48cea3",
+      "bytes": 48867,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-may-overview.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/may/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "ed2c186bfa3cd264a6c75966865a0ed0c5ca148307d465333a85ecf87c5472ab",
+      "bytes": 8687,
+      "rows": 17
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-may-outlook.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/may/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "93256acae372223db6e5b5723089be2f9414319cfa30737cc834dfd142a78760",
+      "bytes": 93508,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-may-outlook.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/may/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "21ebb3d750ff38fd150c83e63e85c7cc90b7d2c14f9cff23ba15354616e76f9c",
+      "bytes": 32461,
+      "rows": 53
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-may-box-a-how-might-tariffs-affect-australian-trade.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/may/box-a-how-might-tariffs-affect-australian-trade.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: How Might Tariffs Affect Australian Trade?",
+      "sha256": "4c07d46cb58036cbe6a569826d0e3212029a29ff9c8604e69afce320cdca5f13",
+      "bytes": 52497,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-may-box-a-how-might-tariffs-affect-australian-trade.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/may/box-a-how-might-tariffs-affect-australian-trade.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: How Might Tariffs Affect Australian Trade?",
+      "sha256": "264694cff4dee22d1119e29adc15853562cad528d69798ca589c0bcd787aa531",
+      "bytes": 11612,
+      "rows": 17
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-may-box-b-the-impact-of-the-recent-floods-on-the-australian-economy.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/may/box-b-the-impact-of-the-recent-floods-on-the-australian-economy.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box B: The Impact of the Recent Floods on the Australian Economy",
+      "sha256": "20b431c6d1566fac44581dc9434f0984e9875be16d89bb9f750c1f706e290415",
+      "bytes": 39300,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-may-box-b-the-impact-of-the-recent-floods-on-the-australian-economy.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/may/box-b-the-impact-of-the-recent-floods-on-the-australian-economy.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box B: The Impact of the Recent Floods on the Australian Economy",
+      "sha256": "eb9160ad2ead555efffb02293a430128f70e2e8d01db64adf5e13a9fc5df0959",
+      "bytes": 3142,
+      "rows": 8
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-may-box-c-insights-from-liaison.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/may/box-c-insights-from-liaison.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box C: Insights from Liaison",
+      "sha256": "5b3633626d3c53ea8c404279e90d591900c7e17bb3997cd83d710ea208be1c42",
+      "bytes": 47969,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-may-box-c-insights-from-liaison.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/may/box-c-insights-from-liaison.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box C: Insights from Liaison",
+      "sha256": "2f602cdffd47f944fe246c6d441adca6bc75339e7350554bdfc1f60b8b77d434",
+      "bytes": 9124,
+      "rows": 19
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-aug-overview.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/aug/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "bab6c8ddd8cd90ccfea660ae6860f97a5130258a3fbea81399e2a586e1c839b3",
+      "bytes": 47453,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-aug-overview.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/aug/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "f9fbc6a2cddfe898370a60cc2242b7a19184ba728c2b9ca21198f8975e2589cd",
+      "bytes": 7671,
+      "rows": 17
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-aug-economic-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/aug/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "88ff322fe00b7e56adeb9a82bc5f0fc26882748d37324818d3ac5c9bccde1913",
+      "bytes": 112972,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-aug-economic-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/aug/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "fbc572cf27b828745c8f2e3a923ae88de0c26bfc1542a0d2c43c480b3263233e",
+      "bytes": 45433,
+      "rows": 81
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-aug-financial-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/aug/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "45764bb8f2b59e1db240749ad62d8ccf2a1e70f8aea323d634d7098dd1ba7adf",
+      "bytes": 70982,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-aug-financial-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/aug/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "5ee536d03297e96d7316a4b45c49e69c1e6ba54561da843cfedaf665ad32efa3",
+      "bytes": 21652,
+      "rows": 42
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-aug-outlook.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/aug/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "bcc8311ea52ef28775569302f924145cc259bc7a1bfb6f13a46c6c89b8c9ddab",
+      "bytes": 90705,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-aug-outlook.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/aug/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "408606757c4d808ec9f053ef24b8231063bd38aa7a02c28012f8450846c124c9",
+      "bytes": 34246,
+      "rows": 58
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-aug-box-a-how-are-global-trading-patterns-adjusting-to-changes-in-trade-policy-and-what-does-it-mean-for-australia.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/aug/box-a-how-are-global-trading-patterns-adjusting-to-changes-in-trade-policy-and-what-does-it-mean-for-australia.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: How are Global Trading Patterns Adjusting to Changes in Trade Policy, and What Does It Mean for Australia?",
+      "sha256": "85e586e93fe535bd2e4c9e13db872840d9bb3d86efc0192da5e0ca81806b7630",
+      "bytes": 55459,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-aug-box-a-how-are-global-trading-patterns-adjusting-to-changes-in-trade-policy-and-what-does-it-mean-for-australia.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/aug/box-a-how-are-global-trading-patterns-adjusting-to-changes-in-trade-policy-and-what-does-it-mean-for-australia.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: How are Global Trading Patterns Adjusting to Changes in Trade Policy, and What Does It Mean for Australia?",
+      "sha256": "78d70c89a7484dbe62b2cafc73893ff3f396f2796cbc3ac8dd360ce40c6f3c89",
+      "bytes": 14008,
+      "rows": 21
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-nov-overview.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/nov/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "d3762661c8c8573af8f32ccdd14b056392fa25ccfbac9666feaafa24107da05c",
+      "bytes": 48808,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-nov-overview.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/nov/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "62698dbe2ce63de969b396f1cdf1526526f86c904f83004cd5d3789135edcd85",
+      "bytes": 8895,
+      "rows": 24
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-nov-economic-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/nov/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "bf769c258e441ccbdd85ab8a878ff99fabba2a62b95140681b86342fd2cdf55b",
+      "bytes": 116331,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-nov-economic-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/nov/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "64315f9f7cbe7b35a22e13477befbd2e07e046d227201e9dd64a51bd7e810d3f",
+      "bytes": 51444,
+      "rows": 99
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-nov-financial-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/nov/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "763b14a6be553bf15b8362196855d32502adc133bd185d842a5787c6ea3d30ed",
+      "bytes": 85647,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-nov-financial-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/nov/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "191cf91c5a5812c5300a54ef2045c35cafe4b405f24728ffbfa7a1c8cd011a8d",
+      "bytes": 29286,
+      "rows": 50
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-nov-outlook.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/nov/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "005480126e9fc2cad91af8be9d602cd1cadd63fb678776388888ee8b0c7754f6",
+      "bytes": 91498,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-nov-outlook.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/nov/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "bf36054e3042be8d63d8d77dd911f2b6cdc8de8ec3062003a69178e2597e68de",
+      "bytes": 35521,
+      "rows": 50
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2025-nov-box-a-insights-from-liaison.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/nov/box-a-insights-from-liaison.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: Insights from Liaison",
+      "sha256": "7e7677e15905c67ed9d6c29c4c87ecdfc1a8dd4d80356be856ed96eac9332f92",
+      "bytes": 45549,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2025-nov-box-a-insights-from-liaison.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2025/nov/box-a-insights-from-liaison.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: Insights from Liaison",
+      "sha256": "24e6c82a26b91a4d226e3d3dc485be24940e3298d26d06ea8ed7e2d7119a4ef7",
+      "bytes": 7504,
+      "rows": 18
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-feb-overview.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/feb/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "49b3879055e14fe01066a818a92b7f9841eeed46bf3b83a9580fa355c0dc8043",
+      "bytes": 48149,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-feb-overview.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/feb/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "6148d1901072e9945b8dac255482193c1fd3018a7dfa868c2a61cff94b19251f",
+      "bytes": 8682,
+      "rows": 25
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-feb-economic-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/feb/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "c3ffc9298f7bb394d67c1a937d1e6844642843a65330c7a892b68d36c7fef82b",
+      "bytes": 120381,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-feb-economic-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/feb/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "9694c6de218f774f3db685608a5dedfe2313a473693f91aba2154308de8f5d18",
+      "bytes": 53720,
+      "rows": 84
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-feb-financial-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/feb/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "be462b33a523ed6f1b718aa3beed72ea909ee3439399c8842d9141b8e1859b79",
+      "bytes": 77884,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-feb-financial-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/feb/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "0998c2cfc08416f10c5754676aeb1258863df15df29e7d96e74f02a90a4884a2",
+      "bytes": 26393,
+      "rows": 48
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-feb-outlook.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/feb/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "df357222fb3e2d765c35562ac6484fcb554ffec945793ebcc5b0b5456652c181",
+      "bytes": 90293,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-feb-outlook.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/feb/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "09eedf7fb76f6655df96578e115816347eb3171ad555f330d4b550dc711c17c7",
+      "bytes": 35844,
+      "rows": 58
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-feb-box-a-update-on-the-rbas-approach-to-assessing-full-employment.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/feb/box-a-update-on-the-rbas-approach-to-assessing-full-employment.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: Update on the RBA's Approach to Assessing Full Employment",
+      "sha256": "3224a065031b30ece3b518a53b984e8ed31efac11266f9440c454d024b34275f",
+      "bytes": 42356,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-feb-box-a-update-on-the-rbas-approach-to-assessing-full-employment.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/feb/box-a-update-on-the-rbas-approach-to-assessing-full-employment.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: Update on the RBA's Approach to Assessing Full Employment",
+      "sha256": "45396fd799e67b72567632042906624a3c91ed2e9009ec84442339277de7e628",
+      "bytes": 5547,
+      "rows": 5
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-may-overview.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/may/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "32f667b5a7e9b3088e7d6ab435b986f6b5b7ea0159ad4d23fd2d38fe76394a40",
+      "bytes": 50346,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-may-overview.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/may/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "b6f12c37d052888fe37d596f634a8b29c71b0056361c147983c7544bd03741c0",
+      "bytes": 10302,
+      "rows": 23
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-may-economic-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/may/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "a90cc4b181cdbf9d6e6c8bcd7b37fd4d7883a0c22b8ab8881a84eced5d14203d",
+      "bytes": 116118,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-may-economic-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/may/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "8772e3703a8b26e1d7f60b796a39a63035bf1d47120358c75b47e5b29b3237fe",
+      "bytes": 51511,
+      "rows": 75
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-may-financial-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/may/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "61657587cddcda2cfa0c65ea959b1f4b864564b5040d3e89f04948af6365a87d",
+      "bytes": 82124,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-may-financial-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/may/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "f79d17a279b05d6a80a894e18e361b42c745e2ed36469578c739d5a101bd83fe",
+      "bytes": 26342,
+      "rows": 59
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-may-outlook.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/may/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "f4d3401061195974190edf0926b5b07b6e6c0f2bbb0086ab944ab3e86941a448",
+      "bytes": 104851,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-may-outlook.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/may/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "414e61a6215d9485632808a7e41a38e19fa30946debe4ec6ab1bde1b503173e8",
+      "bytes": 45762,
+      "rows": 66
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-may-box-a-insights-from-liaison.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/may/box-a-insights-from-liaison.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: Insights From Liaison",
+      "sha256": "91d690177ab6522399e72232b2775b0d984ccc4cf292b89414f8b701ac6faef9",
+      "bytes": 52758,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-may-box-a-insights-from-liaison.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/may/box-a-insights-from-liaison.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: Insights From Liaison",
+      "sha256": "338f99695e09b7f6bfa5007befd9b660abd827821d689d8bccb9eeba20f825b8",
+      "bytes": 13560,
+      "rows": 19
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-aug-overview.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/aug/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "3909f4daa1b7627858c00f3510d3ced9081d780132d518087708cb74fb916ef0",
+      "bytes": 51213,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-aug-overview.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/aug/overview.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Overview",
+      "sha256": "9f9c32c9ee537ba648d754a5e705852aca7f3c9d64e4b847119d06b95e2069d4",
+      "bytes": 11635,
+      "rows": 46
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-aug-economic-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/aug/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "6d148f6dd1647c53da09fc3f853a44afc300f95af62f5f77f865228aaca9818f",
+      "bytes": 121454,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-aug-economic-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/aug/economic-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Economic Conditions",
+      "sha256": "9d3e6ce1bc266ec28cada7a74b6cbb3fba95edd0332fa585062db9cc0a518f81",
+      "bytes": 53501,
+      "rows": 97
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-aug-financial-conditions.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/aug/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "d9f6e966b359f63ffeac40ebcae99fd7c605d0c88f4d338b241a993f23dc84a2",
+      "bytes": 70026,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-aug-financial-conditions.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/aug/financial-conditions.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Financial Conditions",
+      "sha256": "db98518f6d77fd51507a97bc122179d80cc291dd3f1c98e93fe5e08fd99a7856",
+      "bytes": 21263,
+      "rows": 43
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-aug-outlook.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/aug/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "50cf2b20fae19402d36ebf97ec14884c26ff9350f944f69102d5b9081a6e3b62",
+      "bytes": 89627,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-aug-outlook.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/aug/outlook.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Outlook",
+      "sha256": "4a0d2b8adc8b206873fb2a02b1f451fb3c6ed83fc896b8de330028f2c778eb9d",
+      "bytes": 34390,
+      "rows": 61
+    },
+    {
+      "path": "data/snapshot/documents/html/smp-2026-aug-box-a-insights-from-liaison.html",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/aug/box-a-insights-from-liaison.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: Insights From Liaison",
+      "sha256": "52c340ecbeee5dcdb022e7d15b458d1d3d268376e26c02b619ae4f5231b083ad",
+      "bytes": 45968,
+      "rows": null
+    },
+    {
+      "path": "data/snapshot/documents/text/smp-2026-aug-box-a-insights-from-liaison.txt",
+      "source_url": "https://www.rba.gov.au/publications/smp/2026/aug/box-a-insights-from-liaison.html",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Box A: Insights From Liaison",
+      "sha256": "56d6df03532da6101a38d40efa0cbc0d89e81d04e9ddc1388864b4e5216a6336",
+      "bytes": 7726,
+      "rows": 13
+    },
+    {
+      "path": "data/snapshot/documents/catalogue.json",
+      "source_url": "https://www.rba.gov.au/monetary-policy/",
+      "publisher": "Reserve Bank of Australia",
+      "licence": "CC BY 4.0",
+      "title": "Catalogue of snapshotted RBA documents",
+      "sha256": "fab143ac8c5a683038d0018dc9d3ef6342936f1c82e57e7daf7b69191bf860a3",
+      "bytes": 32506,
+      "rows": 63
+    }
+  ]
+}

@@ -1,4 +1,11 @@
 .venv/
+data/warehouse/
+.cache/
+site/
+transform/target/
+transform/dbt_packages/
+transform/logs/
+.ruff_cache/
 __pycache__/
 *.pyc
 .pytest_cache/

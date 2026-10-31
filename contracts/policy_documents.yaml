@@ -1,0 +1,23 @@
+domain: policy_documents
+owner: LuciferDataEngineer
+description: Monetary Policy Board decisions, minutes and Statement on Monetary Policy chapters, 2025-2026.
+dataset: data/warehouse/tidy/documents.parquet
+schema:
+  - name: doc_id
+    type: VARCHAR
+  - name: doc_type
+    type: VARCHAR
+  - name: doc_date
+    type: DATE
+  - name: url
+    type: VARCHAR
+quality:
+  - rule: min_rows
+    value: 30
+  - rule: not_null
+    column: doc_date
+  - rule: unique
+    column: doc_id
+freshness:
+  column: doc_date
+  max_age_days: 45
