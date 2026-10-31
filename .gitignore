@@ -5,6 +5,7 @@ site/
 transform/target/
 transform/dbt_packages/
 transform/logs/
+transform/.user.yml
 .ruff_cache/
 __pycache__/
 *.pyc

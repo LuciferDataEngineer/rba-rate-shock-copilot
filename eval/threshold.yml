@@ -1,0 +1,3 @@
+# CI fails if hybrid retrieval recall@5 falls below this.
+# Tuned after the first full run on the committed snapshot; keep a margin under the measured score.
+hybrid_recall_at_5: 0.85

@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Why are rates going up?",
+    "citation": {
+      "quote": "But inflation is still too high and the Board judged that, in light of recent developments, a further tightening in financial conditions is warranted to support a return of inflation to target in a reasonable period.",
+      "doc_id": "mr-26-27",
+      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "doc_date": "2026-09-29",
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-27.html",
+      "section": "Decision"
+    },
+    "doc_ids": [
+      "mr-26-27",
+      "minutes-2026-09-29",
+      "smp-2026-feb-economic-conditions",
+      "minutes-2026-05-05",
+      "minutes-2026-02-03"
+    ]
+  },
+  {
+    "question": "What has it said about prices?",
+    "citation": {
+      "quote": "Trimmed mean inflation remains elevated compared with the baseline \u2013 around 0.4 percentage points higher by early 2027 \u2013 as the larger and more persistent energy price shock passes through to consumer prices (Graph 3.10).",
+      "doc_id": "smp-2026-may-outlook",
+      "title": "Outlook",
+      "doc_date": "2026-05-05",
+      "url": "https://www.rba.gov.au/publications/smp/2026/may/outlook.html",
+      "section": "Adverse Scenario 1: Significantly higher energy prices drive higher and more persistent inflationary pressures and weaker economic activity."
+    },
+    "doc_ids": [
+      "smp-2026-may-outlook",
+      "smp-2026-aug-economic-conditions",
+      "smp-2025-aug-economic-conditions",
+      "smp-2026-aug-outlook",
+      "smp-2025-nov-economic-conditions"
+    ]
+  },
+  {
+    "question": "What has it said about jobs?",
+    "citation": {
+      "quote": "The unemployment rate was 4.4 per cent in June; this is still below our estimate of the rate consistent with full employment, suggesting that labour market conditions remain a little tight.",
+      "doc_id": "smp-2026-aug-economic-conditions",
+      "title": "Economic Conditions",
+      "doc_date": "2026-08-11",
+      "url": "https://www.rba.gov.au/publications/smp/2026/aug/economic-conditions.html",
+      "section": "Summary"
+    },
+    "doc_ids": [
+      "smp-2026-aug-outlook",
+      "minutes-2026-05-05",
+      "smp-2026-may-economic-conditions",
+      "smp-2026-aug-economic-conditions",
+      "smp-2026-may-outlook"
+    ]
+  },
+  {
+    "question": "What has it said about energy and the Middle East?",
+    "citation": {
+      "quote": "Members noted a range of upside risks to this projection, including: global oil prices could move even higher if the conflict in the Middle East persists or escalates; pass-through to consumer prices of cost pressures related to the conflict could be more pronounced; and domestic capacity pressures could be more enduring if the global or Australian economies receive more support from AI-related investment than anticipated or growth in domestic supply capacity proves even weaker than assumed.",
+      "doc_id": "minutes-2026-08-11",
+      "title": "11 August 2026",
+      "doc_date": "2026-08-11",
+      "url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-08-11.html",
+      "section": "Economic outlook"
+    },
+    "doc_ids": [
+      "minutes-2026-08-11",
+      "minutes-2026-03-17",
+      "smp-2026-may-economic-conditions",
+      "minutes-2026-06-16",
+      "minutes-2026-05-05"
+    ]
+  },
+  {
+    "question": "What has it said about artificial intelligence and investment?",
+    "citation": {
+      "quote": "This reflected significant fundraising for investment in AI, a reassessment of the prospective returns from investment in data centres (given broader developments in the market for AI services) and the unwinding of some highly leveraged positions in certain AI-related equities.",
+      "doc_id": "minutes-2026-08-11",
+      "title": "11 August 2026",
+      "doc_date": "2026-08-11",
+      "url": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-08-11.html",
+      "section": "Financial conditions"
+    },
+    "doc_ids": [
+      "minutes-2026-08-11",
+      "smp-2026-aug-outlook",
+      "smp-2026-aug-economic-conditions",
+      "minutes-2026-06-16",
+      "smp-2026-aug-financial-conditions"
+    ]
+  }
+]

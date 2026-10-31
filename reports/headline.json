@@ -1,0 +1,965 @@
+{
+  "as_of_melbourne": "Sunday 1 November 2026, 9:22am AEDT",
+  "next_decision": "Tuesday 3 November 2026, 2:30pm AEDT",
+  "kpis": {
+    "cash_rate": 4.6,
+    "cash_rate_date": "2026-10-29",
+    "hikes_2026": 4,
+    "cumulative_hike_bp": 100,
+    "housing_rate": 6.2,
+    "housing_rate_date": "2026-08-31",
+    "housing_rate_january": 5.5,
+    "repayment_600k": 3674.81,
+    "repayment_600k_january": 3406.73,
+    "extra_repayment_600k": 268.08,
+    "extra_repayment_100k": 44.68,
+    "step_25bp_600k": 97.89,
+    "step_25bp_100k": 16.31,
+    "cpi_yoy": 4.3,
+    "cpi_month": "2026-09-01",
+    "trimmed_mean_yoy": 3.6,
+    "trimmed_mean_month": "2026-09-01",
+    "real_cash_rate": 1.0,
+    "inflation_gap_vs_top": 0.6,
+    "inflation_gap_vs_midpoint": 1.1,
+    "unemployment": 4.7,
+    "unemployment_month": "2026-09-01",
+    "unemployment_january": 4.1,
+    "weekly_earnings": 2083.7,
+    "repayment_share_of_one_wage": 0.407,
+    "scheduled_repayments_to_income": 9.4,
+    "scheduled_repayments_month": "2026-03-01"
+  },
+  "decisions_2026": [
+    {
+      "effective_date": "2026-02-04",
+      "previous_target": 3.6,
+      "new_target": 3.85,
+      "change_bp": 25,
+      "direction": "increase"
+    },
+    {
+      "effective_date": "2026-03-18",
+      "previous_target": 3.85,
+      "new_target": 4.1,
+      "change_bp": 25,
+      "direction": "increase"
+    },
+    {
+      "effective_date": "2026-05-06",
+      "previous_target": 4.1,
+      "new_target": 4.35,
+      "change_bp": 25,
+      "direction": "increase"
+    },
+    {
+      "effective_date": "2026-09-30",
+      "previous_target": 4.35,
+      "new_target": 4.6,
+      "change_bp": 25,
+      "direction": "increase"
+    }
+  ],
+  "series": {
+    "hero": [
+      {
+        "month": "2024-01",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-02",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-03",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-04",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-05",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-06",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-07",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-08",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-09",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-10",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-11",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2024-12",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2025-01",
+        "cash_rate": 4.35,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2025-02",
+        "cash_rate": 4.1,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2025-03",
+        "cash_rate": 4.1,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      },
+      {
+        "month": "2025-04",
+        "cash_rate": 4.1,
+        "headline_inflation": 2.4,
+        "trimmed_mean": 3.2
+      },
+      {
+        "month": "2025-05",
+        "cash_rate": 3.85,
+        "headline_inflation": 2.1,
+        "trimmed_mean": 3.0
+      },
+      {
+        "month": "2025-06",
+        "cash_rate": 3.85,
+        "headline_inflation": 1.9,
+        "trimmed_mean": 2.8
+      },
+      {
+        "month": "2025-07",
+        "cash_rate": 3.85,
+        "headline_inflation": 3.0,
+        "trimmed_mean": 3.0
+      },
+      {
+        "month": "2025-08",
+        "cash_rate": 3.6,
+        "headline_inflation": 3.2,
+        "trimmed_mean": 3.1
+      },
+      {
+        "month": "2025-09",
+        "cash_rate": 3.6,
+        "headline_inflation": 3.6,
+        "trimmed_mean": 3.2
+      },
+      {
+        "month": "2025-10",
+        "cash_rate": 3.6,
+        "headline_inflation": 3.8,
+        "trimmed_mean": 3.3
+      },
+      {
+        "month": "2025-11",
+        "cash_rate": 3.6,
+        "headline_inflation": 3.4,
+        "trimmed_mean": 3.2
+      },
+      {
+        "month": "2025-12",
+        "cash_rate": 3.6,
+        "headline_inflation": 3.8,
+        "trimmed_mean": 3.3
+      },
+      {
+        "month": "2026-01",
+        "cash_rate": 3.6,
+        "headline_inflation": 3.8,
+        "trimmed_mean": 3.3
+      },
+      {
+        "month": "2026-02",
+        "cash_rate": 3.85,
+        "headline_inflation": 3.7,
+        "trimmed_mean": 3.3
+      },
+      {
+        "month": "2026-03",
+        "cash_rate": 4.1,
+        "headline_inflation": 4.6,
+        "trimmed_mean": 3.3
+      },
+      {
+        "month": "2026-04",
+        "cash_rate": 4.1,
+        "headline_inflation": 4.2,
+        "trimmed_mean": 3.3
+      },
+      {
+        "month": "2026-05",
+        "cash_rate": 4.35,
+        "headline_inflation": 4.0,
+        "trimmed_mean": 3.5
+      },
+      {
+        "month": "2026-06",
+        "cash_rate": 4.35,
+        "headline_inflation": 3.8,
+        "trimmed_mean": 3.6
+      },
+      {
+        "month": "2026-07",
+        "cash_rate": 4.35,
+        "headline_inflation": 3.5,
+        "trimmed_mean": 3.6
+      },
+      {
+        "month": "2026-08",
+        "cash_rate": 4.35,
+        "headline_inflation": 4.0,
+        "trimmed_mean": 3.5
+      },
+      {
+        "month": "2026-09",
+        "cash_rate": 4.6,
+        "headline_inflation": 4.3,
+        "trimmed_mean": 3.6
+      },
+      {
+        "month": "2026-10",
+        "cash_rate": 4.6,
+        "headline_inflation": null,
+        "trimmed_mean": null
+      }
+    ],
+    "repayments": [
+      {
+        "month": "2025-01",
+        "repayment": 3713.84,
+        "rate": 6.3
+      },
+      {
+        "month": "2025-02",
+        "repayment": 3674.81,
+        "rate": 6.2
+      },
+      {
+        "month": "2025-03",
+        "repayment": 3635.97,
+        "rate": 6.1
+      },
+      {
+        "month": "2025-04",
+        "repayment": 3635.97,
+        "rate": 6.1
+      },
+      {
+        "month": "2025-05",
+        "repayment": 3558.82,
+        "rate": 5.9
+      },
+      {
+        "month": "2025-06",
+        "repayment": 3520.52,
+        "rate": 5.8
+      },
+      {
+        "month": "2025-07",
+        "repayment": 3520.52,
+        "rate": 5.8
+      },
+      {
+        "month": "2025-08",
+        "repayment": 3406.73,
+        "rate": 5.5
+      },
+      {
+        "month": "2025-09",
+        "repayment": 3406.73,
+        "rate": 5.5
+      },
+      {
+        "month": "2025-10",
+        "repayment": 3406.73,
+        "rate": 5.5
+      },
+      {
+        "month": "2025-11",
+        "repayment": 3406.73,
+        "rate": 5.5
+      },
+      {
+        "month": "2025-12",
+        "repayment": 3406.73,
+        "rate": 5.5
+      },
+      {
+        "month": "2026-01",
+        "repayment": 3406.73,
+        "rate": 5.5
+      },
+      {
+        "month": "2026-02",
+        "repayment": 3520.52,
+        "rate": 5.8
+      },
+      {
+        "month": "2026-03",
+        "repayment": 3597.3,
+        "rate": 6.0
+      },
+      {
+        "month": "2026-04",
+        "repayment": 3597.3,
+        "rate": 6.0
+      },
+      {
+        "month": "2026-05",
+        "repayment": 3674.81,
+        "rate": 6.2
+      },
+      {
+        "month": "2026-06",
+        "repayment": 3713.84,
+        "rate": 6.3
+      },
+      {
+        "month": "2026-07",
+        "repayment": 3674.81,
+        "rate": 6.2
+      },
+      {
+        "month": "2026-08",
+        "repayment": 3674.81,
+        "rate": 6.2
+      }
+    ],
+    "unemployment": [
+      {
+        "month": "2024-01",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2024-02",
+        "unemployment": 3.7
+      },
+      {
+        "month": "2024-03",
+        "unemployment": 3.9
+      },
+      {
+        "month": "2024-04",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2024-05",
+        "unemployment": 4.0
+      },
+      {
+        "month": "2024-06",
+        "unemployment": 4.0
+      },
+      {
+        "month": "2024-07",
+        "unemployment": 4.2
+      },
+      {
+        "month": "2024-08",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2024-09",
+        "unemployment": 4.0
+      },
+      {
+        "month": "2024-10",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2024-11",
+        "unemployment": 3.9
+      },
+      {
+        "month": "2024-12",
+        "unemployment": 4.0
+      },
+      {
+        "month": "2025-01",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2025-02",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2025-03",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2025-04",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2025-05",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2025-06",
+        "unemployment": 4.3
+      },
+      {
+        "month": "2025-07",
+        "unemployment": 4.3
+      },
+      {
+        "month": "2025-08",
+        "unemployment": 4.2
+      },
+      {
+        "month": "2025-09",
+        "unemployment": 4.4
+      },
+      {
+        "month": "2025-10",
+        "unemployment": 4.3
+      },
+      {
+        "month": "2025-11",
+        "unemployment": 4.3
+      },
+      {
+        "month": "2025-12",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2026-01",
+        "unemployment": 4.1
+      },
+      {
+        "month": "2026-02",
+        "unemployment": 4.3
+      },
+      {
+        "month": "2026-03",
+        "unemployment": 4.3
+      },
+      {
+        "month": "2026-04",
+        "unemployment": 4.5
+      },
+      {
+        "month": "2026-05",
+        "unemployment": 4.4
+      },
+      {
+        "month": "2026-06",
+        "unemployment": 4.4
+      },
+      {
+        "month": "2026-07",
+        "unemployment": 4.5
+      },
+      {
+        "month": "2026-08",
+        "unemployment": 4.7
+      },
+      {
+        "month": "2026-09",
+        "unemployment": 4.7
+      }
+    ],
+    "themes": [
+      {
+        "month_start": "2025-02-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 244,
+        "hits": 1,
+        "share": 0.004098
+      },
+      {
+        "month_start": "2025-02-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 244,
+        "hits": 49,
+        "share": 0.20082
+      },
+      {
+        "month_start": "2025-02-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 244,
+        "hits": 15,
+        "share": 0.061475
+      },
+      {
+        "month_start": "2025-02-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 244,
+        "hits": 102,
+        "share": 0.418033
+      },
+      {
+        "month_start": "2025-04-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 62,
+        "hits": 0,
+        "share": 0.0
+      },
+      {
+        "month_start": "2025-04-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 62,
+        "hits": 9,
+        "share": 0.145161
+      },
+      {
+        "month_start": "2025-04-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 62,
+        "hits": 1,
+        "share": 0.016129
+      },
+      {
+        "month_start": "2025-04-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 62,
+        "hits": 21,
+        "share": 0.33871
+      },
+      {
+        "month_start": "2025-05-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 158,
+        "hits": 0,
+        "share": 0.0
+      },
+      {
+        "month_start": "2025-05-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 158,
+        "hits": 16,
+        "share": 0.101266
+      },
+      {
+        "month_start": "2025-05-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 158,
+        "hits": 12,
+        "share": 0.075949
+      },
+      {
+        "month_start": "2025-05-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 158,
+        "hits": 51,
+        "share": 0.322785
+      },
+      {
+        "month_start": "2025-07-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 53,
+        "hits": 0,
+        "share": 0.0
+      },
+      {
+        "month_start": "2025-07-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 53,
+        "hits": 11,
+        "share": 0.207547
+      },
+      {
+        "month_start": "2025-07-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 53,
+        "hits": 5,
+        "share": 0.09434
+      },
+      {
+        "month_start": "2025-07-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 53,
+        "hits": 16,
+        "share": 0.301887
+      },
+      {
+        "month_start": "2025-08-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 245,
+        "hits": 0,
+        "share": 0.0
+      },
+      {
+        "month_start": "2025-08-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 245,
+        "hits": 48,
+        "share": 0.195918
+      },
+      {
+        "month_start": "2025-08-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 245,
+        "hits": 21,
+        "share": 0.085714
+      },
+      {
+        "month_start": "2025-08-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 245,
+        "hits": 80,
+        "share": 0.326531
+      },
+      {
+        "month_start": "2025-09-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 53,
+        "hits": 0,
+        "share": 0.0
+      },
+      {
+        "month_start": "2025-09-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 53,
+        "hits": 9,
+        "share": 0.169811
+      },
+      {
+        "month_start": "2025-09-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 53,
+        "hits": 3,
+        "share": 0.056604
+      },
+      {
+        "month_start": "2025-09-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 53,
+        "hits": 20,
+        "share": 0.377358
+      },
+      {
+        "month_start": "2025-11-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 266,
+        "hits": 10,
+        "share": 0.037594
+      },
+      {
+        "month_start": "2025-11-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 266,
+        "hits": 76,
+        "share": 0.285714
+      },
+      {
+        "month_start": "2025-11-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 266,
+        "hits": 16,
+        "share": 0.06015
+      },
+      {
+        "month_start": "2025-11-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 266,
+        "hits": 89,
+        "share": 0.334586
+      },
+      {
+        "month_start": "2025-12-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 41,
+        "hits": 2,
+        "share": 0.04878
+      },
+      {
+        "month_start": "2025-12-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 41,
+        "hits": 7,
+        "share": 0.170732
+      },
+      {
+        "month_start": "2025-12-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 41,
+        "hits": 1,
+        "share": 0.02439
+      },
+      {
+        "month_start": "2025-12-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 41,
+        "hits": 15,
+        "share": 0.365854
+      },
+      {
+        "month_start": "2026-02-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 253,
+        "hits": 26,
+        "share": 0.102767
+      },
+      {
+        "month_start": "2026-02-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 253,
+        "hits": 77,
+        "share": 0.304348
+      },
+      {
+        "month_start": "2026-02-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 253,
+        "hits": 20,
+        "share": 0.079051
+      },
+      {
+        "month_start": "2026-02-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 253,
+        "hits": 89,
+        "share": 0.351779
+      },
+      {
+        "month_start": "2026-03-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 63,
+        "hits": 3,
+        "share": 0.047619
+      },
+      {
+        "month_start": "2026-03-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 63,
+        "hits": 13,
+        "share": 0.206349
+      },
+      {
+        "month_start": "2026-03-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 63,
+        "hits": 21,
+        "share": 0.333333
+      },
+      {
+        "month_start": "2026-03-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 63,
+        "hits": 18,
+        "share": 0.285714
+      },
+      {
+        "month_start": "2026-05-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 292,
+        "hits": 26,
+        "share": 0.089041
+      },
+      {
+        "month_start": "2026-05-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 292,
+        "hits": 66,
+        "share": 0.226027
+      },
+      {
+        "month_start": "2026-05-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 292,
+        "hits": 177,
+        "share": 0.606164
+      },
+      {
+        "month_start": "2026-05-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 292,
+        "hits": 73,
+        "share": 0.25
+      },
+      {
+        "month_start": "2026-06-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 42,
+        "hits": 8,
+        "share": 0.190476
+      },
+      {
+        "month_start": "2026-06-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 42,
+        "hits": 10,
+        "share": 0.238095
+      },
+      {
+        "month_start": "2026-06-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 42,
+        "hits": 18,
+        "share": 0.428571
+      },
+      {
+        "month_start": "2026-06-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 42,
+        "hits": 10,
+        "share": 0.238095
+      },
+      {
+        "month_start": "2026-08-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 262,
+        "hits": 67,
+        "share": 0.255725
+      },
+      {
+        "month_start": "2026-08-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 262,
+        "hits": 83,
+        "share": 0.316794
+      },
+      {
+        "month_start": "2026-08-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 262,
+        "hits": 87,
+        "share": 0.332061
+      },
+      {
+        "month_start": "2026-08-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 262,
+        "hits": 76,
+        "share": 0.290076
+      },
+      {
+        "month_start": "2026-09-01",
+        "theme": "ai_investment",
+        "theme_label": "AI and investment",
+        "chunks": 61,
+        "hits": 15,
+        "share": 0.245902
+      },
+      {
+        "month_start": "2026-09-01",
+        "theme": "capacity",
+        "theme_label": "Capacity and productivity",
+        "chunks": 61,
+        "hits": 15,
+        "share": 0.245902
+      },
+      {
+        "month_start": "2026-09-01",
+        "theme": "energy",
+        "theme_label": "Energy and fuel",
+        "chunks": 61,
+        "hits": 13,
+        "share": 0.213115
+      },
+      {
+        "month_start": "2026-09-01",
+        "theme": "labour_market",
+        "theme_label": "Jobs and wages",
+        "chunks": 61,
+        "hits": 15,
+        "share": 0.245902
+      }
+    ]
+  },
+  "checks": {
+    "cash_rate_is_4_60": true,
+    "four_hikes": true,
+    "cpi_is_4_3": true,
+    "trimmed_mean_is_3_6": true,
+    "unemployment_is_4_7": true,
+    "extra_repayment_near_268": true
+  }
+}

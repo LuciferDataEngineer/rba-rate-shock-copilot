@@ -1,0 +1,34 @@
+{
+  "cost_aud": 0,
+  "note": "All engines ran locally. No paid vector database and no cloud warehouse.",
+  "real_chunks": 2095,
+  "scaled_vectors": 8000,
+  "queries": 25,
+  "dimensions": 384,
+  "numpy_exact": {
+    "latency": {
+      "p50_ms": 0.913,
+      "p95_ms": 0.972
+    },
+    "recall_at_10": 1.0,
+    "neighbours": 10
+  },
+  "pgvector_hnsw": {
+    "available": true,
+    "build_seconds": 4.094,
+    "latency": {
+      "p50_ms": 19.746,
+      "p95_ms": 19.746
+    },
+    "recall_at_10": 1.0
+  },
+  "duckdb_vss_hnsw": {
+    "available": true,
+    "build_seconds": 4.558,
+    "latency": {
+      "p50_ms": 47.641,
+      "p95_ms": 47.641
+    },
+    "recall_at_10": 1.0
+  }
+}

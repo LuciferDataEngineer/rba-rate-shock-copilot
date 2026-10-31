@@ -1,0 +1,286 @@
+{
+  "summary": {
+    "bm25": {
+      "recall_at_5": 0.1562,
+      "mrr": 0.1374,
+      "ndcg_at_5": 0.1176
+    },
+    "vector": {
+      "recall_at_5": 0.3125,
+      "mrr": 0.2132,
+      "ndcg_at_5": 0.2057
+    },
+    "hybrid": {
+      "recall_at_5": 0.9688,
+      "mrr": 0.6693,
+      "ndcg_at_5": 0.7395
+    },
+    "hybrid_rerank": {
+      "recall_at_5": 0.9688,
+      "mrr": 0.6693,
+      "ndcg_at_5": 0.7395
+    },
+    "questions": 32,
+    "reranker": "lexical",
+    "hybrid_recall_at_5_min": 0.85,
+    "passed": true
+  },
+  "per_question": [
+    {
+      "id": "q01",
+      "question": "Why did the Board increase the cash rate target to 4.60 per cent in September 2026?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q02",
+      "question": "Was the September 2026 monetary policy decision unanimous?",
+      "bm25": 0.0,
+      "vector": 1.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q03",
+      "question": "What did the September 2026 decision say about AI-related demand and technology prices?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q04",
+      "question": "What did the September 2026 minutes say market economists expected for the cash rate?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q05",
+      "question": "When did the August 2026 overview say inflation would reach the midpoint of the target range?",
+      "bm25": 0.0,
+      "vector": 1.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q06",
+      "question": "Have banks passed on the three cash rate increases from earlier in 2026?",
+      "bm25": 1.0,
+      "vector": 1.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q07",
+      "question": "Did the Board leave the cash rate unchanged at 4.35 per cent in August 2026?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q08",
+      "question": "Why did the Board increase the cash rate target to 3.85 per cent in February 2026?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q09",
+      "question": "Why did the Board increase the cash rate target to 4.10 per cent in March 2026?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q10",
+      "question": "Why did the Board increase the cash rate target to 4.35 per cent in May 2026?",
+      "bm25": 0.0,
+      "vector": 1.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q11",
+      "question": "Why did the Board leave the cash rate unchanged in June 2026?",
+      "bm25": 0.0,
+      "vector": 1.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q12",
+      "question": "How does the Reserve Bank assess full employment in the February 2026 Statement?",
+      "bm25": 1.0,
+      "vector": 1.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q13",
+      "question": "Did the August 2026 overview judge the labour market to be a little tight?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q14",
+      "question": "What did the September 2026 decision say about weak productivity growth?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q15",
+      "question": "What did the September 2026 decision say about global energy prices and the Middle East?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q16",
+      "question": "What did members say in the September 2026 minutes about higher oil prices?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q17",
+      "question": "Did the May 2026 economic conditions chapter mention spending on data centres?",
+      "bm25": 1.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q18",
+      "question": "Until when does the August 2026 outlook expect trimmed mean inflation to stay above 3 per cent?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q19",
+      "question": "What unemployment rate did the May 2026 overview report for March?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q20",
+      "question": "What did the August 2026 economic conditions chapter say about the NAIRU and full employment?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q21",
+      "question": "What messages did liaison teams collect for the August 2026 Statement?",
+      "bm25": 1.0,
+      "vector": 1.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q22",
+      "question": "Did the September 2026 decision say the three earlier increases had tightened financial conditions?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q23",
+      "question": "What did the September 2026 decision say about housing prices and new housing loans?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q24",
+      "question": "Why did inflation pick up before the February 2026 rate increase to 3.85 per cent?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q25",
+      "question": "What did the March 2026 minutes record about the decision to raise the cash rate to 4.10 per cent?",
+      "bm25": 0.0,
+      "vector": 1.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q26",
+      "question": "What cash rate did the Board lower the target to in August 2025?",
+      "bm25": 0.0,
+      "vector": 0.5,
+      "hybrid": 0.5,
+      "hybrid_rerank": 0.5
+    },
+    {
+      "id": "q27",
+      "question": "Did the Board leave the cash rate unchanged at 3.60 per cent in December 2025?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q28",
+      "question": "Did the Board leave the cash rate unchanged at 3.60 per cent in November 2025?",
+      "bm25": 0.0,
+      "vector": 1.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q29",
+      "question": "Why did the Board lower the cash rate to 3.85 per cent in May 2025?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q30",
+      "question": "Are financial conditions judged to be somewhat restrictive in the August 2026 Statement?",
+      "bm25": 1.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    },
+    {
+      "id": "q31",
+      "question": "What did the February 2026 decision say about inflation in the second half of 2025?",
+      "bm25": 0.0,
+      "vector": 0.5,
+      "hybrid": 0.5,
+      "hybrid_rerank": 0.5
+    },
+    {
+      "id": "q32",
+      "question": "What did the June 2026 decision say about leaving the cash rate at 4.35 per cent?",
+      "bm25": 0.0,
+      "vector": 0.0,
+      "hybrid": 1.0,
+      "hybrid_rerank": 1.0
+    }
+  ]
+}

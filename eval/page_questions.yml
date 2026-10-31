@@ -1,0 +1,16 @@
+questions:
+  - id: why
+    display: Why are rates going up?
+    question: Why did the Board increase the cash rate target to 4.60 per cent in September 2026 because inflation is still too high?
+  - id: prices
+    display: What has it said about prices?
+    question: What did the Reserve Bank say about trimmed mean inflation remaining elevated as the energy price shock passes through?
+  - id: jobs
+    display: What has it said about jobs?
+    question: What did the Reserve Bank say about the unemployment rate and full employment in 2026?
+  - id: energy
+    display: What has it said about energy and the Middle East?
+    question: What did members say about global oil prices if the conflict in the Middle East persists?
+  - id: ai
+    display: What has it said about artificial intelligence and investment?
+    question: What has the Reserve Bank said in 2026 about AI-related investment and data centres?

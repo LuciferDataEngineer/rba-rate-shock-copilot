@@ -1,0 +1,63 @@
+{
+  "eventType": "COMPLETE",
+  "eventTime": "2026-10-31T22:26:43.796049Z",
+  "run": {
+    "runId": "snapshot-tidy",
+    "facets": {
+      "nominalTime": {
+        "nominalStartTime": "2026-10-31T22:26:43.796049Z"
+      }
+    }
+  },
+  "job": {
+    "namespace": "rba-rate-shock-copilot",
+    "name": "tidy_snapshot",
+    "facets": {
+      "documentation": {
+        "description": "Tidy RBA and ABS snapshot tables, document chunks, and theme shares."
+      }
+    }
+  },
+  "inputs": [
+    {
+      "namespace": "snapshot",
+      "name": "data/snapshot/tables"
+    },
+    {
+      "namespace": "snapshot",
+      "name": "data/snapshot/abs"
+    },
+    {
+      "namespace": "snapshot",
+      "name": "data/snapshot/documents"
+    }
+  ],
+  "outputs": [
+    {
+      "namespace": "warehouse",
+      "name": "data/warehouse/tidy/series_long.parquet"
+    },
+    {
+      "namespace": "warehouse",
+      "name": "data/warehouse/tidy/documents.parquet"
+    },
+    {
+      "namespace": "warehouse",
+      "name": "data/warehouse/tidy/chunks.parquet"
+    },
+    {
+      "namespace": "warehouse",
+      "name": "data/warehouse/tidy/theme_monthly.parquet"
+    }
+  ],
+  "producer": "rba_copilot.pipeline",
+  "schemaURL": "https://openlineage.io/spec/1-0-5/OpenLineage.json",
+  "summary": {
+    "series_rows": 45947,
+    "series_kept": 120,
+    "series_excluded": 34,
+    "documents": 63,
+    "chunks": 2095,
+    "theme_rows": 56
+  }
+}
